@@ -29,6 +29,9 @@ public class DynamicCSG : MonoBehaviour
             meshRenderers[i].material = material;
 
             resultObjects[i].AddComponent<BoxCollider>();
+
+            spawn.transform.parent = resultObjects[i].transform;
+            resultObjects[i].transform.position = offset;
         }
     }
 
