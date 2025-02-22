@@ -98,6 +98,4 @@ public class DynamicCSG : MonoBehaviour
         volumeText.SetActive(true);
         volumeText.GetComponent<Text>().text = GenResultObj.VolumeText(resultObjects[index]);
     }
-
-    //Venom
 }
