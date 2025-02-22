@@ -519,3 +519,8 @@ Received Import Request.
 Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9ed3c4cc2bcc5f07d20d853f149372') in 0.044259 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.962 seconds
+Refreshing native plugins compatible for Editor in 7.74 ms, found 3 plugins.

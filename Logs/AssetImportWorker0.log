@@ -583,3 +583,24 @@ Received Import Request.
 Start importing Assets/ObjPref/Cube.prefab using Guid(0412d9b078733044a9f542693eeb755c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06df0e1d6c39ed780e912ed35cc4ae0c') in 1.411247 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 550.583124 seconds.
+  path: Assets/ObjPref
+  artifactKey: Guid(e3de962aa8dcd3844bda7c3d6e5b2fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ObjPref using Guid(e3de962aa8dcd3844bda7c3d6e5b2fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b689ed4a4e5ecc2ba2b792e35c5bc7f') in 0.002247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.058444 seconds.
+  path: Assets/ObjPref/Cube.prefab
+  artifactKey: Guid(0412d9b078733044a9f542693eeb755c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ObjPref/Cube.prefab using Guid(0412d9b078733044a9f542693eeb755c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc0151af248131353d448a100665c7e') in 0.065884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.918 seconds
+Refreshing native plugins compatible for Editor in 6.23 ms, found 3 plugins.
