@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cylinders\\cylindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|c:\\unity\\project unity\\matanal\\assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|c:\\unity\\project unity\\matanal\\assets\\scripts\\cylinders\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cylinders\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|C:\\Unity\\Project Unity\\MatAnal\\assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "test22.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Test 4\\test22.cs",
               "RelativeDocumentMoniker": "Assets\\Test 4\\test22.cs",
@@ -78,20 +82,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SelectionManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\Cylinders\\SelectionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cylinders\\SelectionManager.cs",
+              "ToolTip": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\Cylinders\\SelectionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cylinders\\SelectionManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:48:39.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CylindController.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\Cylinders\\CylindController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cylinders\\CylindController.cs",
               "ToolTip": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\Cylinders\\CylindController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Cylinders\\CylindController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwGIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAkwD8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T16:41:41.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DynamicCSG.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\DinamicCSG\\DynamicCSG.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DinamicCSG\\DynamicCSG.cs",
@@ -104,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MathHelper.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\CSG2\\SabreCSG-master\\Scripts\\Extensions\\MathHelper.cs",
               "RelativeDocumentMoniker": "Assets\\CSG2\\SabreCSG-master\\Scripts\\Extensions\\MathHelper.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MeshIntersection12.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\test5\\MeshIntersection12.cs",
               "RelativeDocumentMoniker": "Assets\\test5\\MeshIntersection12.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SteinmetzBodyGenerator.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\test\\SteinmetzBodyGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\test\\SteinmetzBodyGenerator.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CylindController.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\test\\CylindController.cs",
               "RelativeDocumentMoniker": "Assets\\test\\CylindController.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CylinderIntersection.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Test 4\\CylinderIntersection.cs",
               "RelativeDocumentMoniker": "Assets\\Test 4\\CylinderIntersection.cs",
@@ -163,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ScenMeneger.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\test\\ScenMeneger.cs",
               "RelativeDocumentMoniker": "Assets\\test\\ScenMeneger.cs",
@@ -175,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Cylinder.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\test\\Cylinder.cs",
               "RelativeDocumentMoniker": "Assets\\test\\Cylinder.cs",
@@ -187,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SteinmetzSolid.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\SteinmetzSolid.cs",
               "RelativeDocumentMoniker": "Assets\\SteinmetzSolid.cs",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MeshIntersection.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\test5\\MeshIntersection.cs",
               "RelativeDocumentMoniker": "Assets\\test5\\MeshIntersection.cs",
@@ -210,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CylinderIntersectionMesh.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Test 4\\CylinderIntersectionMesh.cs",
               "RelativeDocumentMoniker": "Assets\\Test 4\\CylinderIntersectionMesh.cs",

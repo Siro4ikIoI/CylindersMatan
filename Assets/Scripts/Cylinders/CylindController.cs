@@ -59,7 +59,7 @@ public class CylinderController : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = 8.5f;
+        mousePosition.z = 8.7f;
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 }

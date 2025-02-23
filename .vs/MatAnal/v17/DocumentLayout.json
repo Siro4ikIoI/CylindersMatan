@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Unity\\Project Unity\\MatAnal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|C:\\Unity\\Project Unity\\MatAnal\\assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|c:\\unity\\project unity\\matanal\\assets\\scripts\\cylinders\\cylindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cylinders\\cylindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|c:\\unity\\project unity\\matanal\\assets\\scripts\\cylinders\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|C:\\Unity\\Project Unity\\MatAnal\\assets\\scripts\\cylinders\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cylinders\\selectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|C:\\Unity\\Project Unity\\MatAnal\\assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB74EC3D-14BB-DEEA-987C-49C66822450C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dinamiccsg\\dynamiccsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity\\Project Unity\\MatAnal\\Assets\\Test 4\\test22.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SelectionManager.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\Cylinders\\SelectionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cylinders\\SelectionManager.cs",
@@ -90,12 +90,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Cylinders\\SelectionManager.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T16:48:39.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:48:39.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CylindController.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\Cylinders\\CylindController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cylinders\\CylindController.cs",
@@ -108,13 +107,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DynamicCSG.cs",
               "DocumentMoniker": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\DinamicCSG\\DynamicCSG.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DinamicCSG\\DynamicCSG.cs",
               "ToolTip": "C:\\Unity\\Project Unity\\MatAnal\\Assets\\Scripts\\DinamicCSG\\DynamicCSG.cs",
               "RelativeToolTip": "Assets\\Scripts\\DinamicCSG\\DynamicCSG.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T17:45:41.591Z",
               "EditorCaption": ""
