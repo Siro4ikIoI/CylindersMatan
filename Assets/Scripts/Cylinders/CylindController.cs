@@ -4,6 +4,7 @@ public class CylinderController : MonoBehaviour
 {
     private SelectionManager selectionManager;
     private Vector3 offset;
+    public GameObject mainCamera;
 
     void Start()
     {
@@ -59,7 +60,7 @@ public class CylinderController : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = 8.7f;
+        mousePosition.z = mainCamera.transform.position.x;
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 }

@@ -9,7 +9,7 @@ public class DynamicCSG : MonoBehaviour
     public GameObject cylinder2;
     public GameObject cylinder3;
 
-    private GameObject[] resultObjects = new GameObject[3];
+    public static GameObject[] resultObjects = new GameObject[3];
     private MeshFilter[] meshFilters = new MeshFilter[3];
     private MeshRenderer[] meshRenderers = new MeshRenderer[3];
 
