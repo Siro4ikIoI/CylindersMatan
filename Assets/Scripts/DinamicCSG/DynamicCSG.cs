@@ -98,7 +98,7 @@ public class DynamicCSG : MonoBehaviour
     private void VolumeText(int index)
     {
         volumeText.SetActive(true);
-        volumeText.GetComponent<Text>().text = GenResultObj.VolumeText(resultObjects[index]);
+        volumeText.GetComponent<Text>().text = "V = " + GenResultObj.VolumeText(resultObjects[index]) + "...";
     }
 
     public void SetDisplayButon(string ID)

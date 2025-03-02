@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SelectionManager : MonoBehaviour
+public class KeyControll : MonoBehaviour
 {
     private Camera mainCamera;
     private GameObject selectedObject;

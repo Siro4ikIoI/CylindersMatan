@@ -31,7 +31,6 @@ public class WorldControl : MonoBehaviour
     void Update()
     {
         HandleRotation();
-        DistanseUpdate();
         transform.LookAt(target);
     }
 
@@ -39,6 +38,8 @@ public class WorldControl : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
+            DistanseUpdate();
+
             yaw += Input.GetAxis("Mouse X") * rotationSpeed;
             pitch -= Input.GetAxis("Mouse Y") * rotationSpeed;
 

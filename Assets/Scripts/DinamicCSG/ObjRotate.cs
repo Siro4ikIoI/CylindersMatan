@@ -9,12 +9,15 @@ public class ObjRotate : MonoBehaviour
 {
     public Transform target;
     public float rotationSpeed = 5.0f;
+    private float distanse = 3;
     public GameObject mainCamera;
     public GameObject uiCanvas;
     private bool isHolding = false;
 
     private float yaw;
     private float pitch;
+
+    public Animator animator;
 
     void Start()
     {
@@ -43,16 +46,18 @@ public class ObjRotate : MonoBehaviour
 
         if (Input.GetMouseButton(0) && IsPointerOverUIWithTag("Intersect") && (DynamicCSG.resultObjects[1].active == true || DynamicCSG.resultObjects[2].active == true))
         {
+            DistanseUpdate();
+
             yaw += Input.GetAxis("Mouse X") * rotationSpeed;
             pitch -= Input.GetAxis("Mouse Y") * rotationSpeed;
 
             Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
-            transform.position = target.position - rotation * Vector3.forward;
+            transform.position = target.position - rotation * Vector3.forward * distanse;
         }
 
         else if (DynamicCSG.resultObjects[1].active == false && DynamicCSG.resultObjects[2].active == false)
         {
-            transform.position = new Vector3(14,0,100) - Quaternion.Euler(0, -90, 0) * Vector3.forward;
+            transform.position = new Vector3(16,0,100) - Quaternion.Euler(0, -90, 0) * Vector3.forward;
         }
     }
 
@@ -100,5 +105,23 @@ public class ObjRotate : MonoBehaviour
             }
         }
         return false;
+    }
+
+    void DistanseUpdate()
+    {
+        if (Input.GetKey(KeyCode.Equals) && distanse >= 2f)
+        {
+            distanse -= 0.5f;
+        }
+
+        if (Input.GetKey(KeyCode.Minus) && distanse <= 5f)
+        {
+            distanse += 0.5f;
+        }
+    }
+
+    public void MaxObj()
+    {
+        animator.SetBool("", true);
     }
 }

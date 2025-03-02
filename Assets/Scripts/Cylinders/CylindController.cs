@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class ObjectManipulator : MonoBehaviour
+public class CylindController : MonoBehaviour
 {
     public LayerMask selectableLayer;
     public LayerMask gizmoLayer;
@@ -61,7 +61,7 @@ public class ObjectManipulator : MonoBehaviour
             float moveAmount = 0.01f * (activeAxis.name == "Y_Axis" ? mouseDelta.y : mouseDelta.x);
 
             if (activeAxis.name == "X_Axis" && yawAngle <= 270 && yawAngle >= 90) selectedObject.position += new Vector3(-moveAmount, 0, 0);
-            if (activeAxis.name == "X_Axis" && (yawAngle >= 0 && yawAngle <= 90) || (yawAngle <= 360  && yawAngle >= 270)) selectedObject.position += new Vector3(moveAmount, 0, 0);
+            if ((activeAxis.name == "X_Axis") && ((yawAngle >= 0 && yawAngle <= 90) || (yawAngle <= 360  && yawAngle >= 270))) selectedObject.position += new Vector3(moveAmount, 0, 0);
             if (activeAxis.name == "Y_Axis") selectedObject.position += new Vector3(0, moveAmount, 0);
             if (activeAxis.name == "Z_Axis" && yawAngle >= 0 && yawAngle <= 180) selectedObject.position += new Vector3(0, 0, -moveAmount);
             if (activeAxis.name == "Z_Axis" && yawAngle >= 180 && yawAngle <= 360) selectedObject.position += new Vector3(0, 0, moveAmount);

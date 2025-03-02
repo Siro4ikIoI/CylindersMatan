@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class Volume : MonoBehaviour
@@ -24,6 +25,6 @@ public class Volume : MonoBehaviour
 
     public static float SignedVolumeOfTriangle(Vector3 v0, Vector3 v1, Vector3 v2)
     {
-        return Vector3.Dot(v0, Vector3.Cross(v1, v2)) / 6.0f;
+        return Vector3.Dot(v0, Vector3.Cross(v1, v2)) / 6.0f; 
     }
 }

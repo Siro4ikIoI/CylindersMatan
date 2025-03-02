@@ -1,5 +1,6 @@
 ﻿using Parabox.CSG;
 using UnityEngine;
+using System;
 
 namespace Assets.Scripts.DinamicCSG
 {
@@ -43,7 +44,7 @@ namespace Assets.Scripts.DinamicCSG
         public static string VolumeText(GameObject resultObject)
         {
             float volume = Volume.CalculateMeshVolume(resultObject.GetComponent<MeshFilter>().mesh);
-            return volume.ToString();
+            return Math.Round(volume, 3).ToString();
         }
     }
 }
