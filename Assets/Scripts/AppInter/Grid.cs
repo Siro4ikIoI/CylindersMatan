@@ -9,59 +9,71 @@ public class GridRenderer : MonoBehaviour
     public Color textColor = Color.white;
 
     public TMP_FontAsset fontAsset;
-    private Camera mainCamera;
+    public Camera Camera;
+
+    public bool Texst;
+    public bool Grid;
+
+    public Vector3 gridOffset;
 
     private void Start()
     {
-        mainCamera = Camera.main;
-        DrawGrid();
         DrawAxes();
-        DrawLabels();
+        if (Grid) DrawGrid();   
+        if (Texst) DrawLabels();
     }
 
     private void Update()
     {
         foreach (TextMeshPro tmp in FindObjectsOfType<TextMeshPro>())
         {
-            tmp.transform.LookAt(mainCamera.transform);
+            tmp.transform.LookAt(Camera.transform);
             tmp.transform.Rotate(0, 180, 0);
         }
+        gridOffset = gameObject.transform.position;
     }
 
     void DrawGrid()
     {
         for (int i = 0; i <= gridSize; i++)
         {
-            DrawLine(new Vector3(i * gridStep, 0, 0), new Vector3(i * gridStep, 0, gridSize * gridStep), gridColor);
-            DrawLine(new Vector3(0, 0, i * gridStep), new Vector3(gridSize * gridStep, 0, i * gridStep), gridColor);
+            DrawLine(gridOffset + new Vector3(i * gridStep, 0, 0), gridOffset + new Vector3(i * gridStep, 0, gridSize * gridStep), gridColor);
+            DrawLine(gridOffset + new Vector3(0, 0, i * gridStep), gridOffset + new Vector3(gridSize * gridStep, 0, i * gridStep), gridColor);
         }
     }
 
     void DrawAxes()
     {
-        DrawLine(Vector3.zero, Vector3.right * gridSize * gridStep, Color.red);
-        DrawLine(Vector3.zero, Vector3.forward * gridSize * gridStep, Color.blue);
-        DrawLine(Vector3.zero, Vector3.up * gridSize * gridStep, Color.green);
+        float xyzPos = (gridSize * gridStep) + (gridSize * 0.1f);
+
+        DrawLine(gridOffset, gridOffset + Vector3.right * gridSize * gridStep, Color.red);  // Îñü X
+        CreateText("X", gridOffset + new Vector3(xyzPos, 0, 0), Color.red, 6);
+
+        DrawLine(gridOffset, gridOffset + Vector3.forward * gridSize * gridStep, Color.blue);  // Îñü Z
+        CreateText("Z", gridOffset + new Vector3(0, 0, xyzPos), Color.blue, 6);
+
+        DrawLine(gridOffset, gridOffset + Vector3.up * gridSize * gridStep, Color.green);  // Îñü Y
+        CreateText("Y", gridOffset + new Vector3(0, xyzPos, 0), Color.green, 6);
     }
 
     void DrawLabels()
     {
         for (int i = 0; i <= gridSize; i++)
         {
-            CreateText(i.ToString(), new Vector3(i * gridStep, 0, -0.5f));
-            CreateText(i.ToString(), new Vector3(-0.5f, 0, i * gridStep));
-            CreateText(i.ToString(), new Vector3(-0.5f, i * gridStep, 0));
+            CreateText(i.ToString(), gridOffset + new Vector3(i * gridStep, 0, -0.5f), textColor, 4);
+            CreateText(i.ToString(), gridOffset + new Vector3(-0.5f, 0, i * gridStep), textColor, 4);
+            CreateText(i.ToString(), gridOffset + new Vector3(-0.5f, i * gridStep, 0), textColor, 4);
         }
     }
 
-    void CreateText(string text, Vector3 position)
+    void CreateText(string text, Vector3 position, Color color, float fontSize)
     {
         GameObject textObj = new GameObject("Label_" + text);
         textObj.transform.position = position;
         TextMeshPro tmp = textObj.AddComponent<TextMeshPro>();
         tmp.text = text;
-        tmp.fontSize = 4;
-        tmp.color = textColor;
+        tmp.fontSize = fontSize;
+        tmp.color = color;
         tmp.alignment = TextAlignmentOptions.Center;
         tmp.font = fontAsset;
     }

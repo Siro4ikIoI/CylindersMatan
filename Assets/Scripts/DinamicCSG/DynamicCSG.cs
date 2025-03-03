@@ -28,6 +28,9 @@ public class DynamicCSG : MonoBehaviour
 
         resultObjects[1].transform.position = gameObject.transform.position;
         resultObjects[2].transform.position = gameObject.transform.position;
+
+        resultObjects[1].AddComponent<MultiPlaneProjection>();
+        resultObjects[2].AddComponent<MultiPlaneProjection>();
     }
 
     [System.Obsolete]
