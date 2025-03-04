@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering.Universal;
 
 public class GridRenderer : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class GridRenderer : MonoBehaviour
     public Color textColor = Color.white;
 
     public TMP_FontAsset fontAsset;
-    public Camera Camera;
+    private Camera Camera;
 
     public bool Texst;
     public bool Grid;
@@ -21,6 +22,8 @@ public class GridRenderer : MonoBehaviour
         DrawAxes();
         if (Grid) DrawGrid();   
         if (Texst) DrawLabels();
+
+        Camera = Camera.main;
     }
 
     private void Update()
@@ -44,16 +47,9 @@ public class GridRenderer : MonoBehaviour
 
     void DrawAxes()
     {
-        float xyzPos = (gridSize * gridStep) + (gridSize * 0.1f);
-
-        DrawLine(gridOffset, gridOffset + Vector3.right * gridSize * gridStep, Color.red);  // Îñü X
-        CreateText("X", gridOffset + new Vector3(xyzPos, 0, 0), Color.red, 6);
-
-        DrawLine(gridOffset, gridOffset + Vector3.forward * gridSize * gridStep, Color.blue);  // Îñü Z
-        CreateText("Z", gridOffset + new Vector3(0, 0, xyzPos), Color.blue, 6);
-
-        DrawLine(gridOffset, gridOffset + Vector3.up * gridSize * gridStep, Color.green);  // Îñü Y
-        CreateText("Y", gridOffset + new Vector3(0, xyzPos, 0), Color.green, 6);
+        DrawLine(gridOffset, gridOffset + Vector3.right * gridSize * gridStep, Color.red);
+        DrawLine(gridOffset, gridOffset + Vector3.up * gridSize * gridStep, Color.blue);
+        DrawLine(gridOffset, gridOffset + Vector3.forward * gridSize * gridStep, Color.green);
     }
 
     void DrawLabels()
@@ -64,6 +60,12 @@ public class GridRenderer : MonoBehaviour
             CreateText(i.ToString(), gridOffset + new Vector3(-0.5f, 0, i * gridStep), textColor, 4);
             CreateText(i.ToString(), gridOffset + new Vector3(-0.5f, i * gridStep, 0), textColor, 4);
         }
+
+        float xyzPos = (gridSize * gridStep) + (gridSize * 0.1f);
+
+        CreateText("X", gridOffset + new Vector3(xyzPos, 0, 0), Color.red, 6);
+        CreateText("Z", gridOffset + new Vector3(0, xyzPos, 0), Color.blue, 6);
+        CreateText("Y", gridOffset + new Vector3(0, 0, xyzPos), Color.green, 6);
     }
 
     void CreateText(string text, Vector3 position, Color color, float fontSize)
