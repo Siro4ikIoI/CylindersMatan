@@ -11,6 +11,7 @@ public class CylindController : MonoBehaviour
     private Transform activeAxis;
     private Vector3 lastMousePosition;
     public GameObject referenceObject;
+    public static bool isMuwment =  false;
 
     private void Update()
     {
@@ -67,9 +68,14 @@ public class CylindController : MonoBehaviour
             if (activeAxis.name == "Y_Axis" && yawAngle >= 180 && yawAngle <= 360) selectedObject.position += new Vector3(0, 0, moveAmount);
 
             lastMousePosition = Input.mousePosition;
+            isMuwment = true;
         }
 
-        if (Input.GetMouseButtonUp(0)) activeAxis = null;
+        if (Input.GetMouseButtonUp(0))
+        {
+            activeAxis = null;
+            isMuwment = false;
+        }
     }
 
     void SelectObject(Transform obj)

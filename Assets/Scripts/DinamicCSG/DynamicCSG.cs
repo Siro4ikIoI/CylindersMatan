@@ -44,8 +44,11 @@ public class DynamicCSG : MonoBehaviour
 
         try
         {
-            Bicylinder(intersections[0], intersections[1], intersections[2]);
-            Tricylinder(intersections[0], intersections[1], intersections[2]);
+            if (CylindController.isMuwment)
+            {
+                Bicylinder(intersections[0], intersections[1], intersections[2]);
+                Tricylinder(intersections[0], intersections[1], intersections[2]);
+            }
         }
         catch { }
     }
