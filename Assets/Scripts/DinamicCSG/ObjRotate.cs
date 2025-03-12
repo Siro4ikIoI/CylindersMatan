@@ -57,7 +57,7 @@ public class ObjRotate : MonoBehaviour
 
         else if (DynamicCSG.resultObjects[1].active == false && DynamicCSG.resultObjects[2].active == false)
         {
-            transform.position = new Vector3(16,0,100) - Quaternion.Euler(0, -90, 0) * Vector3.forward;
+            transform.position = new Vector3(16,0,100) - Quaternion.Euler(40, -160, 0) * Vector3.forward;
         }
     }
 
